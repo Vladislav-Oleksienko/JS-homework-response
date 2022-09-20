@@ -9,11 +9,9 @@ const response = fetch("https://jsonplaceholder.typicode.com/photos?_limit=20")
 
 const getPosts = (post) => {
   container.innerHTML += `
-  <tr>
     <td class="table-id">${post.id}</td>
     <td>${post.title}</td>
     <td>
       <img src=${post.url} alt="img" class="main-imgs">
-    </td>
-  </tr>`;
+    </td>`;
 };
